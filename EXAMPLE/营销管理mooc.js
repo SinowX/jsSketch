@@ -30,9 +30,9 @@ for(var i=0;i<list.length;i++)
 
 
     var question=new Object()
-    question["Question Type"]=ques_type
-    question["Question Desc Text"]=ques_desc_text
-    question["Question Desc Image"]=ques_desc_img
+    question["Question_Type"]=ques_type
+    question["Question_Desc_Text"]=ques_desc_text
+    question["Question_Desc_Image"]=ques_desc_img
     question["Choices"]=choice
 
     if(ifQUIZ)
@@ -44,5 +44,8 @@ for(var i=0;i<list.length;i++)
 
     ques_list.push(question)
 }
+
+
+var jsonstr=JSON.stringify(ques_list)
 
 //ques_list 保存着题目信息
